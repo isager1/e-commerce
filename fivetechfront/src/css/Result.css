@@ -51,6 +51,7 @@
 
 .resultContainer {
     width: 1000px;
+    margin: 10px;
 }
 
 .resultBox {
@@ -62,6 +63,13 @@
     box-shadow: 0 1px 4px 0 rgb(190, 190, 190);
     cursor: pointer;
 
+}
+
+.resultRightBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 120px;
 }
 
 #article {
@@ -77,9 +85,9 @@
     color: red;
 }
 
-.price {
+.priceBlock {
     display: flex;
-    font-weight: bold;
+    margin-bottom: -100px;
 }
 
 #buy {
@@ -97,20 +105,21 @@
 }
 
 .resultbuttons {
-    margin-top: 70px;
     margin-right: 0px;
     width: 300px;
 }
 
 #productsName {
     margin-left: 25px;
-    font-weight: 300;
+    font-weight: bolder;
+    width: 350px;
 }
 
 #descrip1 {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-left: 25px;
     font-weight: 100;
+    width: 350px;
 }
 
 #prix1 {

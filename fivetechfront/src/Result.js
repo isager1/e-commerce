@@ -154,17 +154,17 @@ const Result = () => {
             <div key={product._id} className="resultBox">
               <img id="article" src={product.imageUrl} alt={product.name + " image"} />
               <div className="description">
-                <h3 id="productsName">{product.name}</h3>
+                <div id="productsName">{product.name}</div>
                 <h4 id="descrip1">{product.description}</h4>
                 {/* <h5 id="descrip2"></h5> */}
               </div>
-              <div className="price">
-                <p id="prix1">{product.price}</p>
-                <FontAwesomeIcon id="euros" icon="fa-euro-sign" />
-              </div>
-              <div className="resultbuttons">
-                <p id="stock">{product.quantity > 0 ? "En stock" : "Produit épuisé"}</p>
-                <button id="buy" onClick={() => addingItem({ id: product._id, ...product })} >Ajouter au panier</button>
+              <div className="resultRightBlock">
+                <div className="priceBlock">
+                       <p id="prix1">{product.price}</p>
+                      <FontAwesomeIcon id="euros" icon="fa-euro-sign" />
+                </div>
+                     <p id="stock">{product.quantity > 0 ? "En stock" : "Produit épuisé"}</p>
+                     <button id="buy" onClick={() => addingItem({ id: product._id, ...product })} >Ajouter au panier</button>           
               </div>
             </div>
           ))}
